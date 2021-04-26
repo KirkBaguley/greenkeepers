@@ -1,0 +1,242 @@
+body{
+    color: #000000;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom,rgb(237,237,237),white);
+}
+
+.wrapper{
+    width: 992px;
+    align-content: center;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(0,201,54);
+    color: white;
+    font-family: Apercu, sans-serif;
+    text-align: right;
+    width: 100%;
+}
+
+h1{
+    line-height: 400%;
+    background-image: url(AdobeStock_85781041-compressor.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 150px;
+    margin-bottom: 0;
+    font-size: 300%;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    padding-bottom: 10px;
+}
+
+nav{
+    list-style: none;
+    font-weight: bold;
+    padding: 0;
+    float: left;
+    width: 967px;
+    margin: 0 0 1em 0;
+    background-color: rgb(179, 179, 179);
+    width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+nav a:link{
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(0,201,54);
+}
+
+nav a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+nav li{
+    float: left;
+}
+
+nav li a{
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-right: 1px solid #000000;
+}
+
+h2,h4{
+    color: rgb(0,201,54);
+    align-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+h3{
+    color: rgb(0,201,54);
+    align-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+footer{
+    font-style: italic;
+    text-align: center;
+    font-size: .8em;
+    background-color: rgb(179, 179, 179);
+    padding: 1em;
+    width: inherit;
+    position: relative;
+    margin-top: 20%;
+}
+
+label{
+    float: left;
+    display: block;
+    width: 10em;
+    padding-right: 2em;
+}
+
+input,textarea{
+    display: block;
+    margin-bottom: 1em;
+}
+
+.myContact{
+    margin-left: 10em;
+}
+
+header,nav,main,footer{
+    display: block;
+}
+
+.scenery{
+    height: 280px;
+    width: 500px;
+    background-image: url(AdobeStock_233059595.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+    padding-right: 30px;
+}
+
+.service{
+    height: 200px;
+    width: 350px;
+    background-image: url(AdobeStock_184203813-compressor.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lawnmower{
+    height: 280px;
+    width: 300px;
+    background-image: url(AdobeStock_85781041-compressor.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+#mobile{
+    display:none;
+    text-decoration: none;
+    color: rgb(0,201,54);
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+
+#desktop{
+    display:inline;
+    text-decoration: none;
+    color: rgb(0,201,54);
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+
+#email{
+    text-decoration: none;
+    color: rgb(0,201,54);
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+@media only screen and (max-width: 992px){
+    
+    .wrapper{
+        width: 768px;
+        margin: 0;
+    }
+    
+    h1{
+        margin: 0;
+    }
+    
+    body{
+        margin:0;
+        padding: 0;
+    }
+    
+    footer{
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+    .wrapper{
+        width: 100%;
+    }
+    
+    h1{
+        font-size: 2.0em;
+        height: 70%;
+        line-height: 200%;
+    }
+    
+    .scenery{
+        height: 200px;
+        width: inherit;
+        padding-bottom: 20px;
+    }
+    
+    #mobile{
+        display: inline;
+        text-decoration: none;
+        color: rgb(0,201,54);
+        font-size: 1.4em;
+        font-weight: bold;
+        text-shadow: 1px 1px black;
+        text-decoration: none;
+    }
+    
+    #desktop{
+        display: none;
+        text-decoration: none;
+        color: rgb(0,201,54);
+        font-size: 1.4em;
+        font-weight: bold;
+        text-shadow: 1px 1px black;
+        text-decoration: none; 
+    }
+}
+
+footer{
+    font-size: 70%;
+}

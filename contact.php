@@ -1,0 +1,74 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="kbaguley24@gmail.com";
+    $subject="Green Keepers Contact Page";
+    $sender=$_POST["myFName"];
+    $senderEmail=$_POST["myEmail"];
+    $message=$_POST["myComments"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Green Keepers Landscaping:: Contact</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Green Keepers Landscaping, Landscaping, St. George, Utah, Washington County, Santa Clara, Landscaping, Saint George, Lawncare, Steve Hansen, phone number, local, contact information, help, retaining walls, tree pruning, job application, hiring, Green Keepers Lawn Care">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script> 
+    function validateForm() {
+        if (document.forms[0].myEmail.value == "" ) {
+            alert("Please enter an e-mail address.");
+            return false;
+        } // end if
+        return true;
+    } // end function validateForm
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+<header>
+    <h1>Green Keepers Landscaping</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
+    </ul>
+</nav>
+        <div class="scenery">
+        </div>
+<main>
+    <h2>Contact Us</h2>
+    <h3>Fill out all fields</h3>
+    <?=$thankYou ?>
+    <form method="post" onsubmit="return validateForm();" action="http://d00329932.altervista.org/milestone6/contact.php">
+        <label>First and Last Name:</label>
+        <input type="text" name="myFName" required>
+        <label>Phone Number:</label>
+        <input type="tel" name="myPhone" required>
+        <label>E-mail Address:</label>
+        <input type="text" name="myEmail" id="myEmail">
+        <label>Comments: </label>
+        <textarea name="myComments" rows="2" cols="20"></textarea>
+        <input type="submit" name="submit">
+     </form>
+</main>
+<footer>
+    <a id="email" href="mailto:skhansen1@hotmail.com">Email: skhansen1@hotmail.com</a><br>
+    <span id="desktop">Phone: 435-619-1911</span>
+    <a id="mobile" href="4356191911">Phone: 435-619-1911</a>
+</footer>
+</div>
+</body>
+</html>
